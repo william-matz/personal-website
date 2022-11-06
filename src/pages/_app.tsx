@@ -1,8 +1,7 @@
-import "styles/fonts";
+import "../styles/fonts";
 import { ChakraProvider } from "@chakra-ui/react";
-import { theme } from "theme";
-import Script from "next/script";
-import Meta from "components/Meta";
+import { theme } from "../theme";
+import Meta from "../components/Meta";
 
 function MyApp({ Component, pageProps }) {
   return (

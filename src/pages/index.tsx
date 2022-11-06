@@ -7,11 +7,11 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { GithubIcon } from "components/icons/Github";
-import { LinkedInIcon } from "components/icons/LinkedIn";
-import { TwitterIcon } from "components/icons/Twitter";
-import { ProjectCard } from "components/ProjectCard";
-import { ProjectIds, projects } from "fixtures/projects";
+import { GithubIcon } from "../components/icons/Github";
+import { LinkedInIcon } from "../components/icons/LinkedIn";
+import { TwitterIcon } from "../components/icons/Twitter";
+import { ProjectCard } from "../components/ProjectCard";
+import { ProjectIds, projects } from "../fixtures/projects";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -101,7 +101,7 @@ export default function HomePage() {
             borderRadius={20}
             backgroundColor="red"
             maxH="500px"
-            src="/images/headshot.png"
+            src="/images/headshot.jpeg"
             alt="Headshot"
             objectFit="cover"
           ></Box>

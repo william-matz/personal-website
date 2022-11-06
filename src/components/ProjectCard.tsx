@@ -1,5 +1,5 @@
 import { Box, IconButton, Stack, Text, Image } from "@chakra-ui/react";
-import { Project } from "fixtures/projects";
+import { Project } from "../fixtures/projects";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "./icons/ArrowUpRight";
 
@@ -37,7 +37,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             isRound
           />
         </Stack>
-        <Image src={image.src} borderRadius={20} />
+        <Image src={image.src} borderRadius={20} alt={`project - ${title}`} />
       </Box>
     </Link>
   );
