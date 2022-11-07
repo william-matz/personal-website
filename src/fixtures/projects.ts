@@ -1,8 +1,16 @@
 import { StaticImageData } from 'next/image';
+// Superfan
 import superfanImage from '../../public/images/projects/superfan.jpg';
 import superfanIcon from '../../public/images/projects/superfan-icon.png';
+// Sparky
 import sparkyImage from '../../public/images/projects/sparky.png';
 import sparkyIcon from '../../public/images/projects/sparky-icon.png';
+// CaringWire
+import caringwireImage from '../../public/images/projects/caringwire.png';
+import caringwireIcon from '../../public/images/projects/caringwire-icon.png';
+// Shindig
+import shindigImage from '../../public/images/projects/shindig.png';
+import shindigIcon from '../../public/images/projects/shindig-icon.png';
 
 export type Project = {
   id: number;
@@ -20,19 +28,21 @@ export type Project = {
     url: string;
   }[]
   technologies?: string[];
-  team?: string;
+  contributions?: string;
 };
 
 export enum ProjectIds {
   Superfan = "superfan",
   Sparky = "sparky",
+  CaringWire = "caringwire",
+  Shindig = "shindig",
 }
 
 export const projects = new Map<ProjectIds, Project>([
   [
     ProjectIds.Superfan,
     {
-      id: 1,
+      id: 0,
       slug: "superfan",
       title: "Superfan",
       subtitle: "The social music app",
@@ -57,15 +67,17 @@ export const projects = new Map<ProjectIds, Project>([
         "Supabase",
         "PostgreSQL",
         "Spotify API",
-        "NodeJS"
+        "NodeJS",
+        "OpenAI GPT-3",
+        "Tableau",
       ],
-      team: "I built this solo, but had design help from @kai_mckinney and product ideas from my wonderful friends.",
+      contributions: "I built this solo, but had design help from @kai_mckinney and product ideas from my wonderful friends.",
     },
   ],
   [
     ProjectIds.Sparky,
     {
-      id: 2,
+      id: 1,
       slug: "sparky",
       title: "Sparky",
       subtitle: "Build an API in 5 minutes",
@@ -105,8 +117,81 @@ export const projects = new Map<ProjectIds, Project>([
         "NodeJS",
         "Docker",
         "Pulumi",
+        "Stripe",
       ],
-      team: "I built Sparky solo over the course of a few months.",
+      contributions: "I built the first version of Sparky solo over the course of a few weeks.",
+    },
+  ],
+  [
+    ProjectIds.CaringWire,
+    {
+      id: 2,
+      slug: "caringwire",
+      title: "CaringWire",
+      subtitle: "The digital caregiver assistant",
+      description: "CaringWire teaches families how to resolve common issues and access local resources, while arming clinical care teams with helpful data that would not otherwise be collected. ",
+      image: caringwireImage,
+      icon: caringwireIcon,
+      url: "https://caringwire.com",
+      gradient: "linear(to-b, #6587FF, #1557BB)",
+      textColor: "#ffffff",
+      links: [
+        {
+          title: "Website",
+          url: "https://caringwire.com",
+        },
+        {
+          title: "App Store",
+          url: "https://apps.apple.com/us/app/caringwire/id1571494318",
+        },
+        {
+          title: "Play Store",
+          url: "https://play.google.com/store/apps/details?id=com.caringwire.app",
+        }
+      ],
+      technologies: [
+        "Angular",
+        "TypeScript",
+        "React Native",
+        "Expo",
+        "MongoDB",
+        "NodeJS",
+        "Serverless Framework",
+        "AWS",
+        "Twilio",
+        "SendGrid",
+        "Auth0",
+        "Azure DevOps",
+        "Webflow",
+        "...more"
+      ],
+      contributions: "I was the lead engineer at CaringWire for 2 years. I built and maintained huge portions of the mobile app, web app, databases, and APIs.",
+    },
+  ],
+  [
+    ProjectIds.Shindig,
+    {
+      id: 3,
+      slug: "shindig",
+      title: "Shindig",
+      subtitle: "Event invites on Snapchat",
+      description: "Launched on the App Store in January 2019. Shindig was one of the first apps to use the Snapchat SDK. We gave our users a way to put event invitations on Snapchat Stickers, then let their friends swipe up to RSVP in Snapchat. Ultimately, we weren't in love with the product and shut it down.",
+      image: shindigImage,
+      icon: shindigIcon,
+      url: "",
+      gradient: "linear(to-b, #15A4A6, #388786)",
+      textColor: "#ffffff",
+      links: [{
+        title: "Wayback",
+        url: "https://web.archive.org/web/20190909063707/https://shindigapp.io/",
+      }],
+      technologies: [
+        "Flutter",
+        "Dart",
+        "Snapchat SDK",
+        "Firebase",
+      ],
+      contributions: "I built this with a team of 4 over the course of a semester. This is the first app I ever worked on so I spent as much time learning as contributing.",
     },
   ],
 ]);

@@ -75,7 +75,12 @@ export default function ProjectPage() {
               {project.subtitle}
             </Text>
             {/* Project links */}
-            <Stack mt={4} direction="row" spacing={2}>
+            <Wrap
+              mt={4}
+              direction="row"
+              spacing={2}
+              hidden={!project.links || !project.links.length}
+            >
               {project.links.map((link) => (
                 <Button
                   key={link.url}
@@ -89,7 +94,7 @@ export default function ProjectPage() {
                   {link.title}
                 </Button>
               ))}
-            </Stack>
+            </Wrap>
           </VStack>
           <Image
             src={project.icon.src}
@@ -122,13 +127,13 @@ export default function ProjectPage() {
             px={8}
             py={6}
             borderRadius={20}
-            hidden={!project.team}
+            hidden={!project.contributions}
           >
             <Heading color={project.textColor} size="md">
-              Team
+              Contributions
             </Heading>
             <Text color={project.textColor} mt={2}>
-              {project.team}
+              {project.contributions}
             </Text>
           </Box>
           <Box
@@ -143,8 +148,10 @@ export default function ProjectPage() {
               Tech
             </Heading>
             <Wrap mt={2} spacing={2}>
-              {project?.technologies?.map((tech) => (
-                <Tag rounded={"full"}>{tech}</Tag>
+              {project?.technologies?.map((tech, index) => (
+                <Tag rounded={"full"} key={index}>
+                  {tech}
+                </Tag>
               ))}
             </Wrap>
           </Box>

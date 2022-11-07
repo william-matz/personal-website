@@ -107,6 +107,8 @@ export default function HomePage() {
             objectFit="cover"
           ></Box>
         </Stack>
+
+        {/* First row of projects */}
         <Stack
           mt={4}
           direction={["column", "column", "column", "row"]}
@@ -118,6 +120,21 @@ export default function HomePage() {
           </Box>
           <Box maxW={["100%", "100%", "100%", "50%"]}>
             <ProjectCard project={projects.get(ProjectIds.Sparky)} />
+          </Box>
+        </Stack>
+
+        {/* Second row of projects */}
+        <Stack
+          mt={4}
+          direction={["column", "column", "column", "row"]}
+          spacing={4}
+          w="full"
+        >
+          <Box maxW={["100%", "100%", "100%", "50%"]}>
+            <ProjectCard project={projects.get(ProjectIds.CaringWire)} />
+          </Box>
+          <Box maxW={["100%", "100%", "100%", "50%"]}>
+            <ProjectCard project={projects.get(ProjectIds.Shindig)} />
           </Box>
         </Stack>
       </Container>
