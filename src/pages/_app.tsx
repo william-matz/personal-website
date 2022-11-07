@@ -1,5 +1,6 @@
-import "../styles/fonts";
 import { ChakraProvider } from "@chakra-ui/react";
+import { Analytics } from "@vercel/analytics/react";
+import "../styles/fonts";
 import { theme } from "../theme";
 import Meta from "../components/Meta";
 
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       <ChakraProvider theme={theme}>
         <Component {...{ pageProps }} />
       </ChakraProvider>
+      <Analytics />
     </>
   );
 }
