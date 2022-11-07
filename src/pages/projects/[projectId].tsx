@@ -8,6 +8,8 @@ import {
   VStack,
   Image,
   Stack,
+  Wrap,
+  Tag,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { ProjectIds, projects } from "../../fixtures/projects";
@@ -42,7 +44,7 @@ export default function ProjectPage() {
 
   return (
     // Full page gradient background
-    <Box h="100vh" w="full" bgGradient={project.gradient}>
+    <Box minH="100vh" w="full" bgGradient={project.gradient}>
       <Container maxW="container.lg" h="full" py={20}>
         {/* Home button */}
         <Button
@@ -107,6 +109,46 @@ export default function ProjectPage() {
         >
           {project.description}
         </Text>
+
+        <Stack
+          mt={10}
+          direction={["column", "column", "row", "row"]}
+          spacing={4}
+          w="full"
+        >
+          <Box
+            w={["100%", "100%", "50%", "50%"]}
+            bg={"rgba(255, 255, 255, 0.1)"}
+            px={8}
+            py={6}
+            borderRadius={20}
+            hidden={!project.team}
+          >
+            <Heading color={project.textColor} size="md">
+              Team
+            </Heading>
+            <Text color={project.textColor} mt={2}>
+              {project.team}
+            </Text>
+          </Box>
+          <Box
+            w={["100%", "100%", "50%", "50%"]}
+            bg={"rgba(255, 255, 255, 0.1)"}
+            px={8}
+            py={6}
+            borderRadius={20}
+            hidden={!project.technologies || !project.technologies.length}
+          >
+            <Heading color={project.textColor} size="md">
+              Tech
+            </Heading>
+            <Wrap mt={2} spacing={2}>
+              {project?.technologies?.map((tech) => (
+                <Tag rounded={"full"}>{tech}</Tag>
+              ))}
+            </Wrap>
+          </Box>
+        </Stack>
       </Container>
     </Box>
   );

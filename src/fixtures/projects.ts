@@ -19,6 +19,8 @@ export type Project = {
     title: string;
     url: string;
   }[]
+  technologies?: string[];
+  team?: string;
 };
 
 export enum ProjectIds {
@@ -45,7 +47,19 @@ export const projects = new Map<ProjectIds, Project>([
           title: "Website",
           url: "https://superfan.social",
         }
-      ]
+      ],
+      technologies: [
+        "TypeScript",
+        "React Native",
+        "Expo",
+        "Next.js",
+        "Chakra UI",
+        "Supabase",
+        "PostgreSQL",
+        "Spotify API",
+        "NodeJS"
+      ],
+      team: "I built this solo, but had design help from @kai_mckinney and product ideas from my wonderful friends.",
     },
   ],
   [
@@ -59,7 +73,7 @@ export const projects = new Map<ProjectIds, Project>([
       image: sparkyImage,
       icon: sparkyIcon,
       url: "https://sparky.codes",
-      gradient: "linear(to-b, #E45151 40%, #EF8C31)",
+      gradient: "linear(to-b, #9559F4 -30%, #4A12EC)",
       textColor: "#ffffff",
       links: [
         {
@@ -70,7 +84,29 @@ export const projects = new Map<ProjectIds, Project>([
           title: "Docs",
           url: "https://docs.sparky.codes",
         }
-      ]
+      ],
+      technologies: [
+        "AWS Lambda",
+        "AWS API Gateway",
+        "AWS EventBridge",
+        "AWS CloudFormation",
+        "AWS ECS",
+        "AWS ECR",
+        "AWS Route53",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Chakra UI",
+        "MongoDB",
+        "Docusaurus",
+        "Auth0",
+        "PostgreSQL",
+        "Serverless Framework",
+        "NodeJS",
+        "Docker",
+        "Pulumi",
+      ],
+      team: "I built Sparky solo over the course of a few months.",
     },
   ],
 ]);
