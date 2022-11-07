@@ -43,120 +43,122 @@ export default function ProjectPage() {
   const project = projects.get(projectId as ProjectIds);
 
   return (
-    // Full page gradient background
-    <Box minH="100vh" w="full" bgGradient={project.gradient}>
-      <Container maxW="container.lg" h="full" py={20}>
-        {/* Home button */}
-        <Button
-          variant={"unstyled"}
-          leftIcon={<ArrowBackIcon />}
-          color={project.textColor}
-          onClick={() => router.replace("/")}
-        >
-          Back
-        </Button>
-
-        <Stack
-          w="full"
-          mt={8}
-          direction={["column-reverse", "column-reverse", "row", "row"]}
-          justifyContent="space-between"
-          spacing={6}
-        >
-          <VStack w="full" align="start">
-            <Heading color={project.textColor} size="2xl">
-              {project.title}
-            </Heading>
-            <Text
-              color={project.textColor}
-              fontSize={[18, 20, 24, 26]}
-              lineHeight={"180%"}
-            >
-              {project.subtitle}
-            </Text>
-            {/* Project links */}
-            <Wrap
-              mt={4}
-              direction="row"
-              spacing={2}
-              hidden={!project.links || !project.links.length}
-            >
-              {project.links.map((link) => (
-                <Button
-                  key={link.url}
-                  rounded="full"
-                  color="white"
-                  rightIcon={<ArrowForwardIcon />}
-                  bg={"rgba(255, 255, 255, 0.2)"}
-                  _hover={{ bg: "blackAlpha.800" }}
-                  onClick={() => window.open(link.url, "_blank")}
-                >
-                  {link.title}
-                </Button>
-              ))}
-            </Wrap>
-          </VStack>
-          <Image
-            src={project.icon.src}
-            alt={project.title}
-            w={140}
-            h={140}
-            borderRadius={20}
-          />
-        </Stack>
-
-        <Text
-          color={project.textColor}
-          mt={8}
-          fontSize={20}
-          opacity={0.8}
-          fontWeight={400}
-        >
-          {project.description}
-        </Text>
-
-        <Stack
-          mt={10}
-          direction={["column", "column", "row", "row"]}
-          spacing={4}
-          w="full"
-        >
-          <Box
-            w={["100%", "100%", "50%", "50%"]}
-            bg={"rgba(255, 255, 255, 0.1)"}
-            px={8}
-            py={6}
-            borderRadius={20}
-            hidden={!project.contributions}
+    <>
+      <Box h="4vh" w="full" bg={project.primaryColor} />
+      <Box minH="96vh" w="full" bgGradient={"linear(to-b, #2c2a3a, #473e51)"}>
+        <Container maxW="container.lg" h="full" py={10}>
+          {/* Home button */}
+          <Button
+            variant={"unstyled"}
+            leftIcon={<ArrowBackIcon />}
+            color={project.textColor}
+            onClick={() => router.replace("/")}
           >
-            <Heading color={project.textColor} size="md">
-              Contributions
-            </Heading>
-            <Text color={project.textColor} mt={2}>
-              {project.contributions}
-            </Text>
-          </Box>
-          <Box
-            w={["100%", "100%", "50%", "50%"]}
-            bg={"rgba(255, 255, 255, 0.1)"}
-            px={8}
-            py={6}
-            borderRadius={20}
-            hidden={!project.technologies || !project.technologies.length}
+            Back
+          </Button>
+
+          <Stack
+            w="full"
+            mt={8}
+            direction={["column-reverse", "column-reverse", "row", "row"]}
+            justifyContent="space-between"
+            spacing={6}
           >
-            <Heading color={project.textColor} size="md">
-              Tech
-            </Heading>
-            <Wrap mt={2} spacing={2}>
-              {project?.technologies?.map((tech, index) => (
-                <Tag rounded={"full"} key={index}>
-                  {tech}
-                </Tag>
-              ))}
-            </Wrap>
-          </Box>
-        </Stack>
-      </Container>
-    </Box>
+            <VStack w="full" align="start">
+              <Heading color={project.textColor} size="2xl">
+                {project.title}
+              </Heading>
+              <Text
+                color={project.textColor}
+                fontSize={[18, 20, 24, 26]}
+                lineHeight={"180%"}
+              >
+                {project.subtitle}
+              </Text>
+              {/* Project links */}
+              <Wrap
+                mt={4}
+                direction="row"
+                spacing={2}
+                hidden={!project.links || !project.links.length}
+              >
+                {project.links.map((link) => (
+                  <Button
+                    key={link.url}
+                    rounded="full"
+                    color="white"
+                    rightIcon={<ArrowForwardIcon />}
+                    bg={"rgba(255, 255, 255, 0.2)"}
+                    _hover={{ bg: "blackAlpha.800" }}
+                    onClick={() => window.open(link.url, "_blank")}
+                  >
+                    {link.title}
+                  </Button>
+                ))}
+              </Wrap>
+            </VStack>
+            <Image
+              src={project.icon.src}
+              alt={project.title}
+              w={140}
+              h={140}
+              borderRadius={20}
+            />
+          </Stack>
+
+          <Text
+            color={project.textColor}
+            mt={8}
+            fontSize={20}
+            opacity={0.8}
+            fontWeight={400}
+          >
+            {project.description}
+          </Text>
+
+          <Stack
+            mt={10}
+            direction={["column", "column", "row", "row"]}
+            spacing={4}
+            w="full"
+          >
+            <Box
+              w={["100%", "100%", "50%", "50%"]}
+              bg={"rgba(255, 255, 255, 0.1)"}
+              px={8}
+              py={6}
+              borderRadius={20}
+              hidden={!project.contributions}
+            >
+              <Heading color={project.textColor} size="md">
+                Contributions
+              </Heading>
+              <Text color={project.textColor} mt={2}>
+                {project.contributions}
+              </Text>
+            </Box>
+            <Box
+              w={["100%", "100%", "50%", "50%"]}
+              bg={"rgba(255, 255, 255, 0.1)"}
+              px={8}
+              py={6}
+              borderRadius={20}
+              hidden={!project.technologies || !project.technologies.length}
+            >
+              <Heading color={project.textColor} size="md">
+                Tech
+              </Heading>
+              <Wrap mt={2} spacing={2}>
+                {project?.technologies?.map((tech, index) => (
+                  <Tag rounded={"full"} key={index}>
+                    {tech}
+                  </Tag>
+                ))}
+              </Wrap>
+            </Box>
+          </Stack>
+        </Container>
+      </Box>
+    </>
   );
 }

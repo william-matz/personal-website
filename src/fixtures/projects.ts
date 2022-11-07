@@ -22,6 +22,7 @@ export type Project = {
   icon: StaticImageData;
   url: string;
   gradient: string;
+  primaryColor: string;
   textColor: string;
   links?: {
     title: string;
@@ -51,6 +52,7 @@ export const projects = new Map<ProjectIds, Project>([
       icon: superfanIcon,
       url: "https://superfan.social",
       gradient: "linear(to-b, #2c2a3a, #473e51)",
+      primaryColor: "#fd663f",
       textColor: "#ffffff",
       links: [
         {
@@ -86,6 +88,7 @@ export const projects = new Map<ProjectIds, Project>([
       icon: sparkyIcon,
       url: "https://sparky.codes",
       gradient: "linear(to-b, #9559F4 -30%, #4A12EC)",
+      primaryColor: "#652aee",
       textColor: "#ffffff",
       links: [
         {
@@ -134,6 +137,7 @@ export const projects = new Map<ProjectIds, Project>([
       icon: caringwireIcon,
       url: "https://caringwire.com",
       gradient: "linear(to-b, #6587FF, #1557BB)",
+      primaryColor: "#008ec5",
       textColor: "#ffffff",
       links: [
         {
@@ -179,7 +183,8 @@ export const projects = new Map<ProjectIds, Project>([
       image: shindigImage,
       icon: shindigIcon,
       url: "",
-      gradient: "linear(to-b, #15A4A6, #388786)",
+      gradient: "linear(to-b, #2cbdbe, #388786)",
+      primaryColor: "#2cbdbe",
       textColor: "#ffffff",
       links: [{
         title: "Wayback",
