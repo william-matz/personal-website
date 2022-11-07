@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Container,
+  Heading,
   IconButton,
   Image,
   Stack,
@@ -17,7 +18,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      <Container maxW={"8xl"} mt={4} pb={20}>
+      <Container maxW={"8xl"} mt={4} pb={4}>
         <Stack
           direction={["column", "column", "row", "row"]}
           spacing={4}
@@ -34,22 +35,22 @@ export default function HomePage() {
             spacing={14}
           >
             <Box>
-              <Text
+              <Heading
                 maxW={"500px"}
                 fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}
                 fontWeight={600}
                 lineHeight={"130%"}
               >
                 Hey, I'm Will. I build apps and websites.
-              </Text>
+              </Heading>
               <Text
                 mt={4}
                 maxW={"500px"}
                 fontSize={{ base: "md", sm: "lg", md: "lg" }}
                 fontWeight={400}
               >
-                I do my best work solo and on small teams. I live in Columbus,
-                Ohio and am building Sparky.
+                I live in Columbus, Ohio and spend most of my time building
+                Sparky. I work best solo or on small teams.
               </Text>
             </Box>
             <Stack direction="row">

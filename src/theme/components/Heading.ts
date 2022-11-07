@@ -1,5 +1,7 @@
 export const Heading = {
-  baseStyle: {},
+  baseStyle: {
+    color: "blackAlpha.900",
+  },
   sizes: {},
   defaultProps: {},
 }
