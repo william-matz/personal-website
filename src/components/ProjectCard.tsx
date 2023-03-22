@@ -16,7 +16,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
 
   return (
     <Link href={`/projects/${slug}`}>
-      <Box w="full" borderRadius={20} position="relative">
+      <Box w="full" borderRadius={12} position="relative">
         <Stack
           w="full"
           flexDirection="row"
@@ -51,7 +51,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             isRound
           />
         </Stack>
-        <Image src={image.src} borderRadius={20} alt={`project - ${title}`} />
+        <Image src={image.src} borderRadius={12} alt={`project - ${title}`} />
       </Box>
     </Link>
   );

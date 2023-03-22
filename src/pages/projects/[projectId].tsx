@@ -102,7 +102,7 @@ export default function ProjectPage() {
               alt={project.title}
               w={140}
               h={140}
-              borderRadius={20}
+              borderRadius={12}
             />
           </Stack>
 
@@ -127,7 +127,7 @@ export default function ProjectPage() {
               bg={"rgba(255, 255, 255, 0.1)"}
               px={8}
               py={6}
-              borderRadius={20}
+              borderRadius={12}
               hidden={!project.contributions}
             >
               <Heading color={project.textColor} size="md">
@@ -142,7 +142,7 @@ export default function ProjectPage() {
               bg={"rgba(255, 255, 255, 0.1)"}
               px={8}
               py={6}
-              borderRadius={20}
+              borderRadius={12}
               hidden={!project.technologies || !project.technologies.length}
             >
               <Heading color={project.textColor} size="md">

@@ -27,7 +27,7 @@ export default function HomePage() {
           <Stack
             flex={1}
             h="500px"
-            borderRadius={20}
+            borderRadius={12}
             px={8}
             py={6}
             background="#F2E8CF"
@@ -50,7 +50,7 @@ export default function HomePage() {
                 fontWeight={400}
               >
                 I live in Columbus, Ohio and spend most of my time building
-                Sparky. I work best solo or on small teams.
+                products. I often work solo or on small teams.
               </Text>
             </Box>
             <Stack direction="row">
@@ -99,7 +99,7 @@ export default function HomePage() {
           </Stack>
           <Box
             as={Image}
-            borderRadius={20}
+            borderRadius={12}
             backgroundColor="red"
             maxH="500px"
             src="/images/headshot.jpeg"
@@ -133,6 +133,18 @@ export default function HomePage() {
           <Box maxW={["100%", "100%", "100%", "50%"]}>
             <ProjectCard project={projects.get(ProjectIds.CaringWire)} />
           </Box>
+          <Box maxW={["100%", "100%", "100%", "50%"]}>
+            <ProjectCard project={projects.get(ProjectIds.Alchemy)} />
+          </Box>
+        </Stack>
+
+        {/* Third row of projects */}
+        <Stack
+          mt={4}
+          direction={["column", "column", "column", "row"]}
+          spacing={4}
+          w="full"
+        >
           <Box maxW={["100%", "100%", "100%", "50%"]}>
             <ProjectCard project={projects.get(ProjectIds.Shindig)} />
           </Box>

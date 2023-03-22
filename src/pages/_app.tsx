@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Meta
         title="Will Matz | Software Engineer"
-        desc="👋 Hi! I'm a software engineer building a company called Sparky. Find out more about me and my work here."
+        desc="👋 Hi! Find out more about me and the software I build here."
         url="https://willmatz.com"
         image="https://willmatz.com/images/meta.png"
         twitter_handle="@will_matz"

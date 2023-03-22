@@ -11,6 +11,9 @@ import caringwireIcon from '../../public/images/projects/caringwire-icon.png';
 // Shindig
 import shindigImage from '../../public/images/projects/shindig.png';
 import shindigIcon from '../../public/images/projects/shindig-icon.png';
+// Alchemy
+import alchemyImage from '../../public/images/projects/alchemy.png';
+import alchemyIcon from '../../public/images/projects/alchemy-icon.png';
 
 export type Project = {
   id: number;
@@ -37,9 +40,40 @@ export enum ProjectIds {
   Sparky = "sparky",
   CaringWire = "caringwire",
   Shindig = "shindig",
+  Alchemy = "alchemy",
 }
 
 export const projects = new Map<ProjectIds, Project>([
+  [
+    ProjectIds.Alchemy,
+    {
+      id: 3,
+      slug: "alchemy",
+      title: "Alchemy",
+      subtitle: "A homebrewing assistant",
+      description: "Alchemy is a homebrewing assistant that helps you brew the perfect beer. It's powered by GPT4, and I built it in a weekend in March 2023.",
+      image: alchemyImage,
+      icon: alchemyIcon,
+      url: "https://alchemybrew.co",
+      gradient: "linear(to-b, #2cbdbe, #388786)",
+      primaryColor: "#ffe355",
+      textColor: "#ffffff",
+      links: [{
+        title: "Website",
+        url: "https://alchemybrew.co",
+      }],
+      technologies: [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Chakra UI",
+        "Supabase",
+        "GPT-4",
+        "Websockets",
+      ],
+      contributions: "I built the whole thing, but had some design help from my wonderful friends.",
+    },
+  ],
   [
     ProjectIds.Superfan,
     {
