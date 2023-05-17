@@ -14,6 +14,9 @@ import shindigIcon from '../../public/images/projects/shindig-icon.png';
 // Alchemy
 import alchemyImage from '../../public/images/projects/alchemy.png';
 import alchemyIcon from '../../public/images/projects/alchemy-icon.png';
+// Helm
+import helmImage from '../../public/images/projects/helm.png';
+import helmIcon from '../../public/images/projects/helm-icon.png';
 
 export type Project = {
   id: number;
@@ -33,6 +36,10 @@ export type Project = {
   }[]
   technologies?: string[];
   contributions?: string;
+  media?: {
+    title: string;
+    url: string;
+  }[];
 };
 
 export enum ProjectIds {
@@ -41,6 +48,7 @@ export enum ProjectIds {
   CaringWire = "caringwire",
   Shindig = "shindig",
   Alchemy = "alchemy",
+  Helm = "helm",
 }
 
 export const projects = new Map<ProjectIds, Project>([
@@ -81,7 +89,7 @@ export const projects = new Map<ProjectIds, Project>([
       slug: "superfan",
       title: "Superfan",
       subtitle: "The social music app",
-      description: "Superfan is an idea that my friends and I have been talking about forever. We love sharing our music with each other, but never truly understood what everyone was listening to. Superfan lets us check in every week to see everyones top songs, album binges, and new discoveries. I built the app over a long weekend, but worked with my friends for weeks to get it right.",
+      description: "Superfan is an idea that my friends and I have been talking about forever. We love sharing our music with each other, but never truly understood what everyone was listening to. Superfan lets us check in every week to see everyones top songs, album binges, and new discoveries. I built the app over a long weekend, but worked with my friends for weeks to get it right. I scaled it solo to over 10k users in 85+ countries, while managing the spiky traffic and high-volume data ingestion.",
       image: superfanImage,
       icon: superfanIcon,
       url: "https://superfan.social",
@@ -92,7 +100,11 @@ export const projects = new Map<ProjectIds, Project>([
         {
           title: "Website",
           url: "https://superfan.social",
-        }
+        },
+        {
+          title: "App Store",
+          url: "https://apps.apple.com/us/app/superfan-the-social-music-app/id6443763704",
+        },
       ],
       technologies: [
         "TypeScript",
@@ -106,8 +118,24 @@ export const projects = new Map<ProjectIds, Project>([
         "NodeJS",
         "OpenAI GPT-3",
         "Tableau",
+        "Pinecone VectorDB",
+        "OpenAI Embeddings",
       ],
-      contributions: "I built this solo, but had design help from @kai_mckinney and product ideas from my wonderful friends.",
+      contributions: "I built this solo, but had design help from @kai_mckinney and product ideas from my wonderful friends and users.",
+      media: [
+        {
+          title: "Superfan: The free social music app enabling collaborative music sharing among friends",
+          url: "https://www.thelantern.com/2023/05/superfan-the-free-social-music-app-enabling-collaborative-music-sharing-among-friends/",
+        },
+        {
+          title: "FisherInk: Tech Startups Emerging From Ohio State",
+          url: "https://issuu.com/fisherink/docs/yearbook_edition_23_",
+        },
+        {
+          title: "TikTok: @hahakcoolgtgbye",
+          url: "https://www.tiktok.com/@hahakcoolgtgbye/video/7206021103779679531"
+        }
+      ]
     },
   ],
   [
@@ -204,6 +232,39 @@ export const projects = new Map<ProjectIds, Project>([
         "...more"
       ],
       contributions: "I was the lead engineer at CaringWire for 2 years. I built and maintained huge portions of the mobile app, web app, databases, and APIs.",
+    },
+  ],
+  [
+    ProjectIds.Helm,
+    {
+      id: 2,
+      slug: "helm",
+      title: "Helm",
+      subtitle: "Experiments in workforce development apps",
+      description: "Helm was many things over the years. My favorite iteration was a project-based hiring platform. We built a web app for builders to create portfolios from their projects. We had hundreds of users at the peak.",
+      image: helmImage,
+      icon: helmIcon,
+      url: "https://joinhelm.com",
+      gradient: "linear(to-b, #2E00B2, #4300FF)",
+      primaryColor: "#4300FF",
+      textColor: "#ffffff",
+      links: [
+        {
+          title: "Website",
+          url: "https://joinhelm.com/",
+        },
+      ],
+      technologies: [
+        "React",
+        "NodeJS",
+        "MongoDB",
+        "DigitalOcean",
+        "Twilio",
+        "SendGrid",
+        "Auth0",
+        "Slack API"
+      ],
+      contributions: "We were a team of 5 builders. I wrote a large amount of the code for our many iterations over the years.",
     },
   ],
   [

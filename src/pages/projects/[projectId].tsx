@@ -1,4 +1,8 @@
-import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
+import {
+  ArrowBackIcon,
+  ArrowForwardIcon,
+  ExternalLinkIcon,
+} from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -157,6 +161,41 @@ export default function ProjectPage() {
               </Wrap>
             </Box>
           </Stack>
+
+          {project.media && project.media.length > 0 && (
+            <Stack my={4}>
+              <Box
+                w={["100%", "100%", "100%", "100%"]}
+                bg={"rgba(255, 255, 255, 0.1)"}
+                px={8}
+                py={6}
+                borderRadius={12}
+              >
+                <Heading color={project.textColor} size="md">
+                  Media
+                </Heading>
+                <VStack align="start" spacing={2} mt={2} width={"100%"}>
+                  {project.media.map((media, index) => (
+                    <Button
+                      key={index}
+                      variant="link"
+                      color={project.textColor}
+                      rightIcon={<ExternalLinkIcon />}
+                      onClick={() => window.open(media.url, "_blank")}
+                      maxWidth={"100%"}
+                      textOverflow={"ellipsis"}
+                      overflow={"hidden"}
+                      whiteSpace={"nowrap"}
+                      textAlign={"left"}
+                      noOfLines={1}
+                    >
+                      {media.title}
+                    </Button>
+                  ))}
+                </VStack>
+              </Box>
+            </Stack>
+          )}
         </Container>
       </Box>
     </>

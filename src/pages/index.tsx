@@ -146,6 +146,9 @@ export default function HomePage() {
           w="full"
         >
           <Box maxW={["100%", "100%", "100%", "50%"]}>
+            <ProjectCard project={projects.get(ProjectIds.Helm)} />
+          </Box>
+          <Box maxW={["100%", "100%", "100%", "50%"]}>
             <ProjectCard project={projects.get(ProjectIds.Shindig)} />
           </Box>
         </Stack>
