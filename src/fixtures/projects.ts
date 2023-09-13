@@ -134,6 +134,10 @@ export const projects = new Map<ProjectIds, Project>([
         {
           title: "TikTok: @hahakcoolgtgbye",
           url: "https://www.tiktok.com/@hahakcoolgtgbye/video/7206021103779679531"
+        },
+        {
+          title: "TikTok: @_sc0utt",
+          url: "https://www.tiktok.com/@_sc0utt/video/7277415439930559752"
         }
       ]
     },
