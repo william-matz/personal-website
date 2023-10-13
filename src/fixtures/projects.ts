@@ -89,7 +89,7 @@ export const projects = new Map<ProjectIds, Project>([
       slug: "superfan",
       title: "Superfan",
       subtitle: "The social music app",
-      description: "Superfan is an idea that my friends and I have been talking about forever. We love sharing our music with each other, but never truly understood what everyone was listening to. Superfan lets us check in every week to see everyones top songs, album binges, and new discoveries. I built the app over a long weekend, but worked with my friends for weeks to get it right. I scaled it solo to over 10k users in 85+ countries, while managing the spiky traffic and high-volume data ingestion.",
+      description: "Superfan is an idea that my friends and I have been talking about forever. We love sharing our music with each other, but never truly understood what everyone was listening to. Superfan lets us check in every week to see everyones top songs, album binges, and new discoveries. I built the app over a long weekend, but worked with my friends for weeks to get it right. I scaled it solo to over 150k users in 120+ countries, while managing the spiky traffic and high-volume data ingestion.",
       image: superfanImage,
       icon: superfanIcon,
       url: "https://superfan.social",
@@ -138,6 +138,10 @@ export const projects = new Map<ProjectIds, Project>([
         {
           title: "TikTok: @_sc0utt",
           url: "https://www.tiktok.com/@_sc0utt/video/7277415439930559752"
+        },
+        {
+          title: "TikTok: @yungmoolababyyyy",
+          url: "https://www.tiktok.com/@yungmoolababyyyy/video/7282971111455755563"
         }
       ]
     },
