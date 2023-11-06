@@ -55,12 +55,38 @@ export default function HomePage() {
                 ],
               },
               image: "https://willmatz.com/images/headshot.jpeg",
-              alumniOf: {
-                "@type": "CollegeOrUniversity",
-                name: "The Ohio State University",
-              },
               gender: "male",
               nationality: "American",
+              alumniOf: {
+                "@type": "EducationalOrganization",
+                name: "The Ohio State University",
+                educationCredentialAwarded:
+                  "Bachelor of Science in Applied Physics",
+                member: [
+                  {
+                    "@type": "EducationalOccupationalCredential",
+                    credentialCategory: "Degree",
+                    educationalLevel: "Bachelor's degree",
+                    dateCreated: "2019-12",
+                    recognizedBy: {
+                      "@type": "EducationalOrganization",
+                      name: "The Ohio State University",
+                    },
+                  },
+                ],
+              },
+              attendeeOf: {
+                "@type": "EducationalOccupationalProgram",
+                educationalProgramMode: "On-site",
+                startDate: "2016-08",
+                endDate: "2019-12",
+                educationalCredentialAwarded:
+                  "Bachelor of Science in Applied Physics",
+                provider: {
+                  "@type": "EducationalOrganization",
+                  name: "The Ohio State University",
+                },
+              },
             }),
           }}
         />
