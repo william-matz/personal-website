@@ -60,8 +60,6 @@ export default function HomePage() {
               alumniOf: {
                 "@type": "EducationalOrganization",
                 name: "The Ohio State University",
-                educationCredentialAwarded:
-                  "Bachelor of Science in Applied Physics",
                 member: [
                   {
                     "@type": "EducationalOccupationalCredential",
@@ -74,18 +72,6 @@ export default function HomePage() {
                     },
                   },
                 ],
-              },
-              attendeeOf: {
-                "@type": "EducationalOccupationalProgram",
-                educationalProgramMode: "On-site",
-                startDate: "2016-08",
-                endDate: "2019-12",
-                educationalCredentialAwarded:
-                  "Bachelor of Science in Applied Physics",
-                provider: {
-                  "@type": "EducationalOrganization",
-                  name: "The Ohio State University",
-                },
               },
             }),
           }}
