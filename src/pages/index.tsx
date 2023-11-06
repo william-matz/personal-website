@@ -14,10 +14,57 @@ import { TwitterIcon } from "../components/icons/Twitter";
 import { ProjectCard } from "../components/ProjectCard";
 import { ProjectIds, projects } from "../fixtures/projects";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function HomePage() {
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Will Matz",
+              givenName: "Will",
+              familyName: "Matz",
+              url: "https://willmatz.com",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Columbus",
+                addressRegion: "Ohio",
+                addressCountry: "United States",
+              },
+              sameAs: [
+                "https://www.linkedin.com/in/matz-william",
+                "https://www.twitter.com/will_matz",
+                "https://github.com/william-matz",
+                "https://www.crunchbase.com/person/will-matz-88ae",
+              ],
+              jobTitle: "Founder & Software Engineer",
+              worksFor: {
+                "@type": "Organization",
+                name: "Superfan",
+                url: "https://superfan.social",
+                founder: "Will Matz",
+                sameAs: [
+                  "https://apps.apple.com/us/app/superfan-the-social-music-app/id6443763704",
+                  "https://twitter.com/superfan_social",
+                  "https://www.linkedin.com/company/superfansocial",
+                ],
+              },
+              image: "https://willmatz.com/images/headshot.jpeg",
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "The Ohio State University",
+              },
+              gender: "male",
+              nationality: "American",
+            }),
+          }}
+        />
+      </Head>
       <Container maxW={"8xl"} mt={4} pb={4}>
         <Stack
           direction={["column", "column", "row", "row"]}
