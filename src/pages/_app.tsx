@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Meta
-        title="Will Matz | Software Engineer"
-        desc="👋 Hi! Find out more about me and the software I build here."
+        title="Will Matz | Founder of Superfan"
+        desc="Founder of Superfan."
         url="https://willmatz.com"
         image="https://willmatz.com/images/meta.png"
         twitter_handle="@will_matz"

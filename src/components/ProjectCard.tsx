@@ -51,7 +51,11 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             isRound
           />
         </Stack>
-        <Image src={image.src} borderRadius={12} alt={`project - ${title}`} />
+        <Image
+          src={image.src}
+          borderRadius={12}
+          alt={`Will Matz's project - ${title}`}
+        />
       </Box>
     </Link>
   );
