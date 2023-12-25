@@ -25,36 +25,31 @@ const playlists = [
     name: "songs for ben",
     apple:
       "https://music.apple.com/us/playlist/songs-for-ben/pl.u-KVXBkABsmoq8Jm",
-    spotify:
-      "https://open.spotify.com/playlist/52nFBag7MHe4ZzeE4msnj9?si=A4ZOUMVLSIeks5aII9mlBw&pi=u-cYinAZM1Q9as",
+    spotify: "https://open.spotify.com/playlist/52nFBag7MHe4ZzeE4msnj9",
   },
   {
     name: "songs for alyssa",
     apple:
       "https://music.apple.com/us/playlist/songs-for-alyssa/pl.u-8aAVZ5eSa798Aa",
-    spotify:
-      "https://open.spotify.com/playlist/6bCJXyaEtTQwMsqzVZBHnK?si=AoCuX5FPRQyZrn5NQ-C1cQ&pi=u-4fkfyQBAQvGW",
+    spotify: "https://open.spotify.com/playlist/6bCJXyaEtTQwMsqzVZBHnK",
   },
   {
     name: "songs for mom",
     apple:
       "https://music.apple.com/us/playlist/songs-for-mom/pl.u-WabZv4jUvpmb7v",
-    spotify:
-      "https://open.spotify.com/playlist/52nFBag7MHe4ZzeE4msnj9?si=A4ZOUMVLSIeks5aII9mlBw&pi=u-cYinAZM1Q9as",
+    spotify: "https://open.spotify.com/playlist/6LXNOkq1dK6SJYlRXCiczT",
   },
   {
     name: "songs for josh",
     apple:
       "https://music.apple.com/us/playlist/songs-for-josh/pl.u-oZylD0YC0v6z20",
-    spotify:
-      "https://open.spotify.com/playlist/7um4Xg0uSrgLCxBocpMnwh?si=gQC1s0ZCTMSRyFLDbgu1xQ&pi=u-6mjppe6QQd6Q",
+    spotify: "https://open.spotify.com/playlist/7um4Xg0uSrgLCxBocpMnwh",
   },
   {
     name: "songs for dad",
     apple:
       "https://music.apple.com/us/playlist/songs-for-dad/pl.u-NpXmzeaTpjBDqp",
-    spotify:
-      "https://open.spotify.com/playlist/5SQAcu4hWaHjqxrdUJb1B7?si=fAnkE41nT4W6pxquZva-VA&pi=u-_IowEbc5TJ-F",
+    spotify: "https://open.spotify.com/playlist/5SQAcu4hWaHjqxrdUJb1B7",
   },
 ];
 
