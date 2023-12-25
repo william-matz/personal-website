@@ -101,7 +101,7 @@ const PlaylistCard = ({ name, apple, spotify }) => {
 
 export default function Christmas2023() {
   return (
-    <Box bg={christmasPalette.background}>
+    <>
       <Head>
         <title>Matz Family Christmas 2023</title>
       </Head>
@@ -166,6 +166,6 @@ export default function Christmas2023() {
           ))}
         </Stack>
       </Container>
-    </Box>
+    </>
   );
 }
