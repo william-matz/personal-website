@@ -89,7 +89,7 @@ export const projects = new Map<ProjectIds, Project>([
       slug: "superfan",
       title: "Superfan",
       subtitle: "The social music app",
-      description: "Superfan is an idea that my friends and I have been talking about forever. We love sharing our music with each other, but never truly understood what everyone was listening to. Superfan lets us check in every week to see everyones top songs, album binges, and new discoveries. I built the app over a long weekend, but worked with my friends for weeks to get it right. I scaled it solo to over 150k users in 120+ countries, while managing the spiky traffic and high-volume data ingestion.",
+      description: "Superfan is an idea that my friends and I have been talking about forever. We love sharing our music with each other, but never truly understood what everyone was listening to. Superfan lets us check in every week to see everyones top songs, album binges, and new discoveries. I built the app over a long weekend, but worked with my friends for weeks to get it right. I scaled it solo to over 200k users in 130+ countries, while managing the spiky traffic and high-volume data ingestion.",
       image: superfanImage,
       icon: superfanIcon,
       url: "https://superfan.social",
@@ -121,7 +121,7 @@ export const projects = new Map<ProjectIds, Project>([
         "Pinecone VectorDB",
         "OpenAI Embeddings",
       ],
-      contributions: "I built this solo, but had design help from @kai_mckinney and product ideas from my wonderful friends and users.",
+      contributions: "I built Superfan solo, but had tons of help along the way from my wonderful friends and users.",
       media: [
         {
           title: "Superfan: The free social music app enabling collaborative music sharing among friends",
@@ -153,7 +153,7 @@ export const projects = new Map<ProjectIds, Project>([
       slug: "sparky",
       title: "Sparky",
       subtitle: "Build an API in 5 minutes",
-      description: "Sparky is a no-code API builder. Connect your existing databases and configure your API in minutes. We integrate with PostgreSQL, MongoDB, Auth0 and more. Behind the scenes, Sparky deploys a serverless API that connects to your database and runs the logic you configure.",
+      description: "Sparky is a no-code API builder. Connect your existing databases and configure your API in minutes. We integrate with PostgreSQL, MongoDB, Auth0 and more. Behind the scenes, Sparky deploys a serverless API that connects to your database and runs the logic you configure. I shut it down to focus on projects that had more traction.",
       image: sparkyImage,
       icon: sparkyIcon,
       url: "https://sparky.codes",
@@ -239,7 +239,7 @@ export const projects = new Map<ProjectIds, Project>([
         "Webflow",
         "...more"
       ],
-      contributions: "I was the lead engineer at CaringWire for 2 years. I built and maintained huge portions of the mobile app, web app, databases, and APIs.",
+      contributions: "I was the lead engineer at CaringWire for 3+ years. I built and maintained huge portions of the mobile app, web app, databases, and APIs.",
     },
   ],
   [
@@ -249,7 +249,7 @@ export const projects = new Map<ProjectIds, Project>([
       slug: "helm",
       title: "Helm",
       subtitle: "Experiments in workforce development apps",
-      description: "Helm was many things over the years. My favorite iteration was a project-based hiring platform. We built a web app for builders to create portfolios from their projects. We had hundreds of users at the peak.",
+      description: "Helm was many things over the years. My favorite iteration was a project-based hiring platform. We built a web app for builders to create portfolios from their projects and had hundreds of users at the peak.",
       image: helmImage,
       icon: helmIcon,
       url: "https://joinhelm.com",
