@@ -118,7 +118,7 @@ export const projects = new Map<ProjectIds, Project>([
         "NodeJS",
         "OpenAI GPT-3",
         "Tableau",
-        "Pinecone VectorDB",
+        "Vector Databases",
         "OpenAI Embeddings",
       ],
       contributions: "I built Superfan solo, but had tons of help along the way from my wonderful friends and users.",
@@ -142,6 +142,14 @@ export const projects = new Map<ProjectIds, Project>([
         {
           title: "TikTok: @yungmoolababyyyy",
           url: "https://www.tiktok.com/@yungmoolababyyyy/video/7282971111455755563"
+        },
+        {
+          title: "Techstars Columbus Announces 2024 Spring Class",
+          url: "https://www.techstars.com/newsroom/techstars-columbus-accelerator-announces-2024-spring-class"
+        },
+        {
+          title: "Columbus Inno: Techstars Columbus First Cohort",
+          url: "https://www.bizjournals.com/columbus/inno/stories/news/2024/03/11/techstars-columbus-first-cohort.html"
         }
       ]
     },
