@@ -97,10 +97,10 @@ export default function HomePage() {
               <Heading
                 maxW={"500px"}
                 fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}
-                fontWeight={600}
+                fontWeight={700}
                 lineHeight={"130%"}
               >
-                Hey, I'm Will. I build apps and websites.
+                Hey, I'm Will Matz.
               </Heading>
               <Text
                 mt={4}
@@ -108,8 +108,8 @@ export default function HomePage() {
                 fontSize={{ base: "md", sm: "lg", md: "lg" }}
                 fontWeight={400}
               >
-                I live in Columbus, Ohio and spend most of my time building
-                products. I often work solo or on small teams.
+                I'm building Superfan to connect music fans with their favorite
+                artists. I'm based in Columbus, Ohio.
               </Text>
             </Box>
             <Stack direction="row">

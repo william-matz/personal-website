@@ -88,8 +88,8 @@ export const projects = new Map<ProjectIds, Project>([
       id: 0,
       slug: "superfan",
       title: "Superfan",
-      subtitle: "The social music app",
-      description: "Superfan is an idea that my friends and I have been talking about forever. We love sharing our music with each other, but never truly understood what everyone was listening to. Superfan lets us check in every week to see everyones top songs, album binges, and new discoveries. I built the app over a long weekend, but worked with my friends for weeks to get it right. I scaled it solo to over 200k users in 130+ countries, while managing the spiky traffic and high-volume data ingestion.",
+      subtitle: "Real connections between artists and fans",
+      description: "Superfan hosts a vibrant community of over 250,000 passionate music fans and artists from around the world. I built the first version in a weekend in late 2022. I scaled it solo for over a year, then joined Techstars Columbus in 2024 to support our mission to help artists and fans connect in a meaningful way.",
       image: superfanImage,
       icon: superfanIcon,
       url: "https://superfan.social",
@@ -121,7 +121,7 @@ export const projects = new Map<ProjectIds, Project>([
         "Vector Databases",
         "OpenAI Embeddings",
       ],
-      contributions: "I built Superfan solo, but had tons of help along the way from my wonderful friends and users.",
+      contributions: "Superfan was a solo project for over a year, but I always had the support of my amazing friends and users. I'm now building Superfan with a small but mighty team.",
       media: [
         {
           title: "Superfan: The free social music app enabling collaborative music sharing among friends",
