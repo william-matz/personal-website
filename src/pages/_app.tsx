@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Meta
         title="Will Matz | Founder of Superfan"
-        desc="Founder of Superfan."
+        desc="I'm building Superfan to connect music fans with their favorite artists."
         url="https://willmatz.com"
         image="https://willmatz.com/images/meta.png"
         twitter_handle="@will_matz"
