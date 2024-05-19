@@ -41,8 +41,9 @@ export default function HomePage() {
                 "https://www.twitter.com/will_matz",
                 "https://github.com/william-matz",
                 "https://www.crunchbase.com/person/will-matz-88ae",
+                "https://www.instagram.com/will_matz",
               ],
-              jobTitle: "Founder & Software Engineer",
+              jobTitle: "Founder and CEO of Superfan",
               worksFor: {
                 "@type": "Organization",
                 name: "Superfan",
@@ -52,11 +53,15 @@ export default function HomePage() {
                   "https://apps.apple.com/us/app/superfan-the-social-music-app/id6443763704",
                   "https://twitter.com/superfan_social",
                   "https://www.linkedin.com/company/superfansocial",
+                  "https://www.instagram.com/superfan.social",
                 ],
+                description:
+                  "Superfan is a vibrant community of music fans and the artists they love.",
               },
               image: "https://willmatz.com/images/headshot.jpeg",
               gender: "male",
               nationality: "American",
+              birthDate: "1998-04-19",
               alumniOf: {
                 "@type": "EducationalOrganization",
                 name: "The Ohio State University",
@@ -73,6 +78,8 @@ export default function HomePage() {
                   },
                 ],
               },
+              description:
+                "Will Matz is the Founder and CEO of Superfan, a global music community.",
             }),
           }}
         />
