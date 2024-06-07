@@ -150,6 +150,14 @@ export const projects = new Map<ProjectIds, Project>([
         {
           title: "Columbus Inno: Techstars Columbus First Cohort",
           url: "https://www.bizjournals.com/columbus/inno/stories/news/2024/03/11/techstars-columbus-first-cohort.html"
+        },
+        {
+          title: "The Michigan Daily: Exploring AI and Superfan",
+          url: "https://www.michigandaily.com/statement/exploring-ai-and-superfan/"
+        },
+        {
+          title: "Columbus Business First: Techstars Columbus Demo Day",
+          url: "https://www.bizjournals.com/columbus/news/2024/06/04/techstars-columbus-demo-day.html?utm_source=st&utm_medium=en&utm_campaign=me&utm_content=CO&ana=e_CO_me&j=35596287&senddate=2024-06-04&empos=p4"
         }
       ]
     },
