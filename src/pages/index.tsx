@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { GithubIcon } from "../components/icons/Github";
 import { LinkedInIcon } from "../components/icons/LinkedIn";
+import { SuperfanIcon } from "../components/icons/Superfan";
 import { TwitterIcon } from "../components/icons/Twitter";
 import { ProjectCard } from "../components/ProjectCard";
 import { ProjectIds, projects } from "../fixtures/projects";
@@ -42,6 +43,7 @@ export default function HomePage() {
                 "https://github.com/william-matz",
                 "https://www.crunchbase.com/person/will-matz-88ae",
                 "https://www.instagram.com/will_matz",
+                "https://www.superfan.social/p/will",
               ],
               jobTitle: "Founder and CEO of Superfan",
               worksFor: {
@@ -51,9 +53,11 @@ export default function HomePage() {
                 founder: "Will Matz",
                 sameAs: [
                   "https://apps.apple.com/us/app/superfan-the-social-music-app/id6443763704",
+                  "https://play.google.com/store/apps/details?id=com.superfan.app",
                   "https://twitter.com/superfan_social",
                   "https://www.linkedin.com/company/superfansocial",
                   "https://www.instagram.com/superfan.social",
+                  "https://www.tiktok.com/@superfanmusic"
                 ],
                 description:
                   "Superfan is a vibrant community of music fans and the artists they love.",
@@ -134,7 +138,7 @@ export default function HomePage() {
               <Link href={"https://twitter.com/will_matz"}>
                 <IconButton
                   aria-label="Twitter"
-                  icon={<TwitterIcon color={"blackAlpha.900"} />}
+                  icon={<TwitterIcon color={"blackAlpha.900"} boxSize={6} />}
                   size="lg"
                   colorScheme={"whiteAlpha"}
                   bg="white"
@@ -144,7 +148,7 @@ export default function HomePage() {
               <Link href={"https://www.linkedin.com/in/matz-william/"}>
                 <IconButton
                   aria-label="LinkedIn"
-                  icon={<LinkedInIcon color={"blackAlpha.900"} />}
+                  icon={<LinkedInIcon color={"blackAlpha.900"} boxSize={6} />}
                   size="lg"
                   colorScheme={"whiteAlpha"}
                   bg="white"
@@ -154,7 +158,17 @@ export default function HomePage() {
               <Link href={"https://github.com/william-matz"}>
                 <IconButton
                   aria-label="GitHub"
-                  icon={<GithubIcon color={"blackAlpha.900"} />}
+                  icon={<GithubIcon color={"blackAlpha.900"} boxSize={6} />}
+                  size="lg"
+                  colorScheme={"whiteAlpha"}
+                  bg="white"
+                  isRound
+                />
+              </Link>
+              <Link href={"https://www.superfan.social/p/will"}>
+                <IconButton
+                  aria-label="Superfan"
+                  icon={<SuperfanIcon color={"blackAlpha.900"} boxSize={6} />}
                   size="lg"
                   colorScheme={"whiteAlpha"}
                   bg="white"

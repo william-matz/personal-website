@@ -89,7 +89,7 @@ export const projects = new Map<ProjectIds, Project>([
       slug: "superfan",
       title: "Superfan",
       subtitle: "Real connections between artists and fans",
-      description: "Superfan hosts a vibrant community of over 250,000 passionate music fans and artists from around the world. I built the first version in a weekend in late 2022. I scaled it solo for over a year, then joined Techstars Columbus in 2024 to support our mission to help artists and fans connect in a meaningful way.",
+      description: "Superfan hosts a vibrant community of over 500,000 passionate music fans and artists from around the world. I built the first version in a weekend in late 2022. I scaled it solo for over a year, then joined Techstars Columbus in 2024 to support our mission to help artists and fans connect in a meaningful way.",
       image: superfanImage,
       icon: superfanIcon,
       url: "https://superfan.social",
@@ -105,6 +105,10 @@ export const projects = new Map<ProjectIds, Project>([
           title: "App Store",
           url: "https://apps.apple.com/us/app/superfan-the-social-music-app/id6443763704",
         },
+        {
+          title: "Play Store",
+          url: "https://play.google.com/store/apps/details?id=com.superfan.app",
+        }
       ],
       technologies: [
         "TypeScript",
